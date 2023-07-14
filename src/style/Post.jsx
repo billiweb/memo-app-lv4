@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 
 const Post = styled.div`
-  padding: 5px 20px;
-  width: 350px;
+  padding: 0px 20px;
+  width: 90%;
   height: 130px;
   margin: 10px 5px;
   border: 1px solid white;

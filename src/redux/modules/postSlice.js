@@ -1,6 +1,29 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../../services/firebase";
 
 const initialState = [];
+
+const COLLECTION_NAME = "post";
+const COLLECTION = collection(db, COLLECTION_NAME);
+
+// firebase에서 post 가져오기
+// useEffect(() => {
+//   const fetchData = async () => {
+//     const querySnapshot = await getDocs(collection(db, "post"));
+
+//     const initialPost = [];
+//     querySnapshot.forEach((doc) => {
+//       const data = {
+//         id: doc.id,
+//         ...doc.data(),
+//       };
+//       initialPost.push(data);
+//     });
+//     setPost(initialPost);
+//   };
+//   fetchData();
+// });
 
 export const postSlice = createSlice({
   name: "post",

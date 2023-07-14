@@ -31,7 +31,6 @@ const PostList = () => {
         // console.log(doc.id);
         // console.log(JSON.stringify(doc.data()));
       });
-
       setPost(initialPost);
     };
     fetchData();

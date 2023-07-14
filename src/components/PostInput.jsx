@@ -2,20 +2,12 @@ import React, { useEffect, useState } from "react";
 import Button from "../style/Button";
 import { useDispatch } from "react-redux";
 import { addPost } from "../redux/modules/postSlice";
-import { getDataFromFS } from "../services/firestore";
 
 const PostInput = () => {
   const [title, setTitle] = useState();
   const [content, setContent] = useState();
 
   const dispatch = useDispatch();
-
-  //   useEffect(() => {
-  //     const fetchData = async () => {
-  //       const docArr = await getDataFromFS();
-  //     };
-  //     fetchData();
-  //   });
 
   return (
     <form
