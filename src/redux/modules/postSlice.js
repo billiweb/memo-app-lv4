@@ -1,17 +1,6 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
-const initialState = [
-  {
-    id: nanoid(),
-    title: "제목 3",
-    content: "내용 3",
-  },
-  {
-    id: nanoid(),
-    title: "제목 2",
-    content: "내용 2",
-  },
-];
+const initialState = [];
 
 export const postSlice = createSlice({
   name: "post",
